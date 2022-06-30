@@ -3,7 +3,7 @@
 {
     --background: #4499ff ;
     --background-digital: rgb(34, 34, 34);
-    --circle: rgba(13, 13, 13, 1); 
+    --circle: rgb(14, 14, 14); 
 }
 body
 {
@@ -42,10 +42,10 @@ body
     height: 450px;
     background: var(--circle);
     border-radius: 50%;
-    box-shadow: 10px 50px 70px rgba(255, 255, 255, 0.25),
-    inset 5px 5px 10px rgba(255, 255, 255, 0.5),
+    box-shadow: 10px 50px 70px rgba(255, 255, 255, 0.158),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
     inset 5px 5px 20px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.75);
+    inset -5px -5px 15px rgba(255, 254, 254, 0.543);
 }
 .clock::before
 {
