@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Paralax Scrolling Website using ScrollTrigger</title>
+</head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+            <h2 id="text">Parallax Website</h2>
+            <img src="./images/monutain_01.png" id="m1">
+            <img src="./images/trees_02.png" id="t2">
+            <img src="./images/monutain_02.png" id="m2">
+            <img src="./images//trees_01.png" id="t1">
+            <img src="./images/man.png" id="man">
+            <img src="./images/plants.png" id="plants">
+        </section>
+        <section class="sec">
+            <h2>Parallax Scrolling Website</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eveniet obcaecati, debitis ipsa voluptatem suscipit quibusdam deserunt numquam dolorum quas molestias nobis facere rem quo et dicta perspiciatis praesentium id assumenda asperiores fugiat commodi tenetur non! Hic quas numquam architecto laboriosam perspiciatis quae provident accusamus quidem odit? Vitae voluptatum eaque excepturi saepe impedit numquam possimus consequatur architecto, placeat molestiae a deleniti reprehenderit rem beatae maiores praesentium sunt. Nihil voluptatibus itaque, repudiandae minima eius saepe. <br><br> Obcaecati est quibusdam cupiditate deserunt maxime minima nostrum nihil dignissimos numquam ea quaerat unde, quia error, repudiandae dolore odit recusandae laboriosam aperiam pariatur. Nesciunt, a? At, id aut ducimus quibusdam sed omnis. Laudantium quia eaque labore assumenda veritatis voluptatum, placeat, optio provident quam voluptate rerum odit expedita est at ad, amet delectus harum esse eos. Voluptates fuga quo non quia laudantium, cupiditate, earum expedita officiis hic dolore at, voluptatum tempora voluptas voluptatibus? Odio architecto itaque eos, exercitationem repellat cupiditate, ipsum voluptatum magnam perspiciatis illum neque temporibus tempora enim rem, doloribus maiores. Inventore odio qui sequi sint ex ad quam suscipit a minima. Ullam neque veniam non veritatis alias ipsa cum minima in iste, quis exercitationem amet nulla sapiente, illum perferendis aperiam iusto blanditiis a consectetur numquam accusantium expedita architecto. <br><br> At, aut rerum facilis minima exercitationem atque unde delectus debitis dolorum doloribus recusandae velit autem cum veniam quas repellendus? Quaerat optio labore iusto aliquid. Deleniti nisi cupiditate laboriosam suscipit, saepe dolor explicabo? Eos, ad hic pariatur optio minima aliquam dolorem magnam non quidem nobis est repudiandae necessitatibus, nihil velit alias in fugiat ipsam adipisci a facere blanditiis! Debitis aliquid cum laborum numquam in itaque eaque delectus rerum expedita perferendis. Doloribus consequatur animi illum, inventore ea veniam officia quisquam quibusdam odit! Eos earum omnis fugit minus nobis, illum quo voluptates aperiam eaque vitae perferendis illo quibusdam id alias eum consequatur ducimus facere fugiat. <br><br> Inventore in exercitationem asperiores reiciendis quam ea, nobis architecto? Et reprehenderit deleniti modi magni dolore dolorem ducimus eaque sequi? Doloribus illo voluptatibus quidem ex hic, dolore animi nostrum magnam ullam reiciendis! Dignissimos voluptates sunt corrupti veniam voluptatibus consequatur adipisci sapiente libero odio quaerat! Corrupti quis eveniet id? Aliquid vitae delectus eligendi harum. Deserunt asperiores rerum qui, iusto dolores voluptate obcaecati delectus odit ex fuga repudiandae, perferendis, eos cum exercitationem ab. Earum provident officiis laboriosam mollitia. Voluptate sequi animi, quidem explicabo fugiat quam doloremque recusandae repellat ducimus aspernatur enim optio iusto eveniet laboriosam ad molestias quo magni, earum voluptatum laudantium maiores repellendus magnam? Ea tempora rem vel officia tempore eveniet inventore facilis. Consectetur quaerat enim quis corporis aliquam veritatis possimus ipsa quam repellendus natus atque rerum odit sint distinctio esse, odio mollitia. <br><br> Vel nulla alias laborum tenetur praesentium! Non, voluptatibus. Animi reiciendis voluptatem voluptatibus magnam obcaecati autem assumenda quidem quo tenetur commodi. Alias inventore cum ullam nam quisquam soluta perferendis corporis, corrupti numquam omnis, laborum sed eligendi, ad accusamus vero suscipit. Magni fuga, harum nam cum ullam perferendis et quaerat vel voluptatem veniam neque ad placeat adipisci nisi cumque molestias modi est provident ratione id. Dolorum.</p>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.from("#m1",{
+                scrollTrigger: {
+                    scrub: true
+                    },
+                    y: 125
+            })
+            gsap.from("m2", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                y: 75
+            })
+            gsap.from("#t2", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                x: -75
+            })
+            gsap.from("#t1", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                x: 75
+            })
+            gsap.from("#man", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                x: -250
+            })
+            gsap.from("#plants", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                x: -75
+            })
+            gsap.from("#text", {
+                scrollTrigger: {
+                    scrub: true
+                },
+                x: 600
+            })
+        </script>
+    </body>
+</html>
