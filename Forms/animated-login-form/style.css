@@ -132,8 +132,9 @@ body
     color: #8f8f8f;
     text-decoration: none;
 }
-.inputBox input:valid ~ a , .inputBox input:focus ~ a{
+.links a:hover {
     color: #45f3ff;
+    transition: 0.5s;
 }
 input[type="submit"]{
     border: none;
